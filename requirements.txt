@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+chromadb
+langchain
+langchain_core
+langchain_community
+openai  # or your embeddings provider
