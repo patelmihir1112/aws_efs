@@ -33,5 +33,5 @@ jobs:
         run: |
           aws ecs update-service \
             --cluster demo \
-            --service demo-service-12movfbt \
+            --service demo \
             --force-new-deployment
