@@ -25,13 +25,13 @@ jobs:
 
       - name: Build Docker image
         run: |
-          IMAGE_URI=654654514301.dkr.ecr.ap-south-1.amazonaws.com/demo-efs:latest
+          IMAGE_URI=654654514301.dkr.ecr.ap-south-1.amazonaws.com/demo:latest
           docker build -t $IMAGE_URI .
           docker push $IMAGE_URI
 
       - name: Deploy to ECS
         run: |
           aws ecs update-service \
-            --cluster demo-cluster \
-            --service demo-service \
+            --cluster demo \
+            --service demo \
             --force-new-deployment
