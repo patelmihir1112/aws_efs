@@ -6,7 +6,7 @@ import os
 app = FastAPI()
 
 # Path inside EFS
-PERSIST_DIR = "/mnt/efs/chroma_db"
+PERSIST_DIR = "/demo/chroma_db"
 
 # Ensure directory exists
 os.makedirs(PERSIST_DIR, exist_ok=True)
